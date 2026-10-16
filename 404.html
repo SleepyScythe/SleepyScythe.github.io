@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · SleepyScythe Works</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script>
+  // Old Sketchroom links (sleepyscythe.github.io/sketchroom/…, in any capitals) land here once this domain is set up.
+  // Send them to Sketchroom's own address, keeping the rest of the link.
+  (function () {
+    var m = location.pathname.match(/^\/sketchroom(\/.*)?$/i);
+    if (m) location.replace('https://sketchroom.sleepyscythe.com' + (m[1] || '/') + location.search + location.hash);
+  })();
+</script>
+<style>
+  :root { color-scheme: dark; --bg: #14181c; --fg: #e7ebee; --mute: #8b97a3; --accent: #56c4b4; }
+  @media (prefers-color-scheme: light) { :root { color-scheme: light; --bg: #e6eaee; --fg: #1b2126; --mute: #5b6670; --accent: #0f8f80; } }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, sans-serif; padding: 16px; box-sizing: border-box; text-align: center; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  p { color: var(--mute); margin: 0 0 18px; }
+  a { color: var(--accent); font-weight: 600; }
+</style>
+</head>
+<body>
+  <main>
+    <h1>Page not found</h1>
+    <p>That page doesn't exist, or it moved.</p>
+    <a href="/">Go to SleepyScythe Works</a>
+  </main>
+</body>
+</html>
